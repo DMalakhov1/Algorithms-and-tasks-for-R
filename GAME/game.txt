@@ -1,0 +1,19 @@
+game <- function(size_mass){
+    n <- 0
+    x <- sample(1:size_mass, 1)
+    print('введите любое значение')
+    while (TRUE){
+        n <- n + 1
+      var <- readline()
+      if (var == x){
+        print("you win!")
+        break
+        } else if (var<x){
+        print("введите значение больше")   
+        } else {
+        print("введите значение меньше")  
+        }}
+    return(n)
+}
+
+game(100)
